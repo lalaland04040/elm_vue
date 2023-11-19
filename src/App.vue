@@ -1,0 +1,231 @@
+<script setup>
+// import HelloWorld from './components/HelloWorld.vue'
+import MyComponents from "@/components/MyComponents.vue";
+import MySonComponents from "@/components/SonComponents/MySonComponents.vue";
+import TheWelcome from './components/TheWelcome.vue'
+import {ref} from "vue";
+import axios from "axios";
+const Ea = ref("")
+const Pw = ref("")
+
+function loginInfo(){
+  axios.post("",{
+    email:Ea.value,
+    passwd:Pw.value
+  }).then(response =>{
+    console.log(response.data)
+  }).catch(error =>{
+    console.log(error)
+  })
+}
+
+function registerInfo(){
+  alert("注册成功")
+
+}
+
+
+
+</script>
+
+<template>
+<div class="beijing">
+  <div id="app" class="wrapper">
+
+    <div class="segment">
+      <h1>Sign up</h1>
+    </div>
+
+    <div class="box">
+      <input v-model="Ea" class="text" type="text" placeholder="Email Address" />
+    </div>
+
+    <div class="box">
+      <input v-model="Pw" class="text" type="password" placeholder="Password" />
+    </div>
+
+    <button @click="loginInfo" class="red" type="button"><i class="fa fa-lock"></i> Log in</button>
+    <button @click="registerInfo" style="color: #000022" class="red" type="button"><i class="fa fa-registered"></i> Register</button>
+
+    <div class="segment">
+      <button class="unit" type="button"><i class="fa fa-arrow-left"></i></button>
+      <button class="unit" type="button"><i class="fa fa-bookmark"></i></button>
+      <button class="unit" type="button"><i class="fa fa-search"></i></button>
+    </div>
+
+  </div>
+</div>
+</template>
+
+<style scoped>
+/*body,*/
+/*html {*/
+/*  background-color:  #ccc;; }*/
+
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none; /* 去掉边框 */
+  z-index: -1; /* 将背景放在最底层 */
+  opacity: 0.45; /* 设置透明度 */
+
+}
+
+
+.beijing {
+  background: url("./imgs/wallhaven-1p398w_1880x940.png") no-repeat center center fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  margin:0;
+}
+
+.wrapper {
+  padding: 16px;
+  width: 400px;
+  margin: 0 auto;
+  /*width: 50%;*/
+  /*height: 50%;*/
+
+}
+.wrapper .segment {
+  padding: 32px 0;
+  text-align: center; }
+
+
+.wrapper .segment h1 {
+  margin: 0; }
+
+.wrapper .box{
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.wrapper .box .text{
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+
+
+/*body,*/
+/*p,*/
+/*input,*/
+/*select,*/
+/*textarea,*/
+button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px; }
+
+div,
+p {
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff; }
+
+
+
+/*input,*/
+button
+{
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+
+  justify-content: center;
+  align-items: center;
+}
+/*label,*/
+button
+{
+  display: block;
+  margin-bottom: 24px;
+  width: 100%; }
+
+/*input {*/
+/*  margin-right: 8px;*/
+/*  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;*/
+/*  width: 100%;*/
+/*  box-sizing: border-box;*/
+/*  transition: all 0.2s ease-in-out;*/
+/*  appearance: none;*/
+/*  -webkit-appearance: none; }*/
+/*  input:focus {*/
+/*    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff; }*/
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  width:100%;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc; }
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff; }
+button .icon {
+  margin-right: 8px; }
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px; }
+button.unit .icon {
+  margin-right: 0; }
+button.red {
+  display: block;
+  width: 100%;
+  color: #ae1100; }
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+.input-group label {
+  margin: 0;
+  flex: 1; }
+
+
+
+</style>

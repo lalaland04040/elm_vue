@@ -1,0 +1,39 @@
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 41 of watch
+
+36: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+37: E:/software/Ruby/Ruby32-x64/bin/sass:32:in `load'
+38: E:/software/Ruby/Ruby32-x64/bin/sass:32:in `<main>'
+39: *\/
+40: body:before {
+41:   white-space: pre;
+42:   font-family: monospace;
+43:   content: "Error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of watch\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - watch\A 3: \A 4: Backtrace:\A 5: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'\A 6: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'\A 7: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'\A 9: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'"; }
+
+Backtrace:
+watch:41
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:494:in `block in tabulate'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each_with_index'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `tabulate'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+E:/software/Ruby/Ruby32-x64/bin/sass:32:in `load'
+E:/software/Ruby/Ruby32-x64/bin/sass:32:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 41 of watch\A \A 36: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'\A 37: E:/software/Ruby/Ruby32-x64/bin/sass:32:in `load'\A 38: E:/software/Ruby/Ruby32-x64/bin/sass:32:in `<main>'\A 39: */\A 40: body:before {\A 41:   white-space: pre;\A 42:   font-family: monospace;\A 43:   content: \"Error: Invalid property: \\"Backtrace:\\" (no value).\A         on line 4 of watch\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - watch\A 3: \A 4: Backtrace:\A 5: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'\A 6: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'\A 7: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'\A 9: E:/software/Ruby/Ruby32-x64/lib/ruby/gems/3.2.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\"; }"; }
